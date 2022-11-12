@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AB45E1E-C166-4787-A936-D778F0A254B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DOCTORS_PORTAL</RootNamespace>
+    <AssemblyName>DOCTORS PORTAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\User\Downloads\Compressed\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutUsForm.Designer.cs">
+      <DependentUpon>aboutUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminAddDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminAddDoctors.Designer.cs">
+      <DependentUpon>adminAddDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminCategory.Designer.cs">
+      <DependentUpon>adminCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminChamber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminChamber.Designer.cs">
+      <DependentUpon>adminChamber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chamberDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chamberDoctorDetails.Designer.cs">
+      <DependentUpon>chamberDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chamberManagerApppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chamberManagerApppointment.Designer.cs">
+      <DependentUpon>chamberManagerApppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chamberManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chamberManagerDashboard.Designer.cs">
+      <DependentUpon>chamberManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="developers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="developers.Designer.cs">
+      <DependentUpon>developers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorsAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorsAppointment.Designer.cs">
+      <DependentUpon>doctorsAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorsDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorsDashboard.Designer.cs">
+      <DependentUpon>doctorsDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSectionTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeSectionTest.Designer.cs">
+      <DependentUpon>HomeSectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrationForm.Designer.cs">
+      <DependentUpon>registrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showAllChambersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="showAllChambersControl.Designer.cs">
+      <DependentUpon>showAllChambersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="showDoctor.Designer.cs">
+      <DependentUpon>showDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userDashboard.Designer.cs">
+      <DependentUpon>userDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userDashboardSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userDashboardSection.Designer.cs">
+      <DependentUpon>userDashboardSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userDoctorDetails.Designer.cs">
+      <DependentUpon>userDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userBookAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userBookAppointment.Designer.cs">
+      <DependentUpon>userBookAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userHomeSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userHomeSection.Designer.cs">
+      <DependentUpon>userHomeSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSelectDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSelectDoctor.Designer.cs">
+      <DependentUpon>userSelectDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSelectDoctorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userSelectDoctorControl.Designer.cs">
+      <DependentUpon>userSelectDoctorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSelectDoctorSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSelectDoctorSection.Designer.cs">
+      <DependentUpon>userSelectDoctorSection.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aboutUsForm.resx">
+      <DependentUpon>aboutUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminAddDoctors.resx">
+      <DependentUpon>adminAddDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCategory.resx">
+      <DependentUpon>adminCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminChamber.resx">
+      <DependentUpon>adminChamber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chamberDoctorDetails.resx">
+      <DependentUpon>chamberDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chamberManagerApppointment.resx">
+      <DependentUpon>chamberManagerApppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chamberManagerDashboard.resx">
+      <DependentUpon>chamberManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="developers.resx">
+      <DependentUpon>developers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorsAppointment.resx">
+      <DependentUpon>doctorsAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorsDashboard.resx">
+      <DependentUpon>doctorsDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeSectionTest.resx">
+      <DependentUpon>HomeSectionTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrationForm.resx">
+      <DependentUpon>registrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showAllChambersControl.resx">
+      <DependentUpon>showAllChambersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userBookAppointment.resx">
+      <DependentUpon>userBookAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showDoctor.resx">
+      <DependentUpon>showDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userDashboard.resx">
+      <DependentUpon>userDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userDashboardSection.resx">
+      <DependentUpon>userDashboardSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userDoctorDetails.resx">
+      <DependentUpon>userDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="userHomeSection.resx">
+      <DependentUpon>userHomeSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSelectDoctor.resx">
+      <DependentUpon>userSelectDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSelectDoctorControl.resx">
+      <DependentUpon>userSelectDoctorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSelectDoctorSection.resx">
+      <DependentUpon>userSelectDoctorSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logoLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\developer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\homeDark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Sir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nameProfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\phoneCall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bloodGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dashboardAd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nh-shohan-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\paragraph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuLogo\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\addChamber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\backArrowLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\userLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\privacyLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\JITU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\RHYME.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeCross.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
